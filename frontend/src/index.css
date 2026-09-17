@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #121316;
+  --color-surface-1: #191b1f;
+  --color-surface-2: #212329;
+  --color-surface-3: #2a2d34;
+  --color-border: #2e3038;
+  --color-border-strong: #3a3d46;
+  --color-text-primary: #edeef0;
+  --color-text-secondary: #999da6;
+  --color-text-tertiary: #6b6f79;
+  --color-accent: #e0912f;
+  --color-accent-dim: #a86a24;
+  --color-profit: #56a76b;
+  --color-loss: #e2483d;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-sans: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  --bg: #121316;
+  --surface-1: #191b1f;
+  --surface-2: #212329;
+  --surface-3: #2a2d34;
+  --border: #2e3038;
+  --border-strong: #3a3d46;
+
+  --text-primary: #edeef0;
+  --text-secondary: #999da6;
+  --text-tertiary: #6b6f79;
+
+  --accent: #e0912f;
+  --accent-dim: #a86a24;
+  --accent-bg: rgba(224, 145, 47, 0.12);
+
+  --profit: #56a76b;
+  --profit-bg: rgba(86, 167, 107, 0.13);
+  --loss: #e2483d;
+  --loss-bg: rgba(226, 72, 61, 0.13);
+
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --sans: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--sans);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent-bg);
+  color: var(--text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-3);
+  border-radius: 6px;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
