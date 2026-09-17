@@ -1,4 +1,4 @@
-"""Inventory & Ingredients — CLAUDE.md §7.3."""
+"""Inventory & Ingredients."""
 
 from __future__ import annotations
 from fastapi import APIRouter, HTTPException

@@ -2,7 +2,7 @@
 store.py — the live, editable view of the seeded dataset.
 
 The seed (app/data/seed.py) is generated once and cached here. On top of it we
-keep a small OVERRIDES dict for every number CLAUDE.md marks editable: menu
+keep a small OVERRIDES dict for every number the owner can edit: menu
 price, menu food cost, ingredient unit cost, channel commission, and each
 deal's two modeled behavioral assumptions (incremental_fraction, attach_effect).
 
@@ -10,7 +10,7 @@ Overrides persist to Postgres when DATABASE_URL/POSTGRES_URL is set (hosted),
 otherwise to a local JSON file (backend/data_overrides.json), so edits survive
 a restart either way. Nothing else needs its own copy of these numbers —
 every module reads through the getters below, so an edit re-flows everywhere
-at once (CLAUDE.md §8/§12: one source of truth, no duplicated logic).
+at once.
 """
 
 from __future__ import annotations

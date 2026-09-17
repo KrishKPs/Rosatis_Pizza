@@ -1,4 +1,4 @@
-"""Orders & Channels — CLAUDE.md §7.5, the live-feeling order feed."""
+"""Orders & Channels: the live-feeling order feed."""
 
 from __future__ import annotations
 from fastapi import APIRouter, Depends

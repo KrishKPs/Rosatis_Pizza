@@ -1,5 +1,5 @@
 """
-inventory.py — inventory depletion + alerts (CLAUDE.md §6.3 / §7.3).
+inventory.py — inventory depletion + alerts.
 
 Ingredients deplete as the seeded orders come in, via the same recipe map
 that drives menu food cost (app/data/store.menu_food_cost). There is no
@@ -39,7 +39,7 @@ def simulate_stock_levels(orders_subset=None, restock_every_days: int = 14) -> d
 
 def inventory_table(orders_subset=None) -> list[dict]:
     """Recipe-tracked stock only (food + packaging) — this is the computed,
-    order-derived view (CLAUDE.md §7.3). Supply items (napkins, gloves, ...)
+    order-derived view. Supply items (napkins, gloves, ...)
     never appear in a recipe, so there's nothing here to compute for them; they
     live in the manual count sheet instead (app/logic/manual_count.py)."""
     stock = simulate_stock_levels(orders_subset)

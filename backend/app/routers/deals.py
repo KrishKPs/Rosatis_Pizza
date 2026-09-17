@@ -1,4 +1,4 @@
-"""Deal Profit Optimizer — CLAUDE.md §7.2, the Promolytics heart."""
+"""Deal Profit Optimizer: the heart of the app."""
 
 from __future__ import annotations
 from fastapi import APIRouter, Depends, HTTPException
@@ -27,7 +27,7 @@ def get_deal(deal_id: str, params: dict = Depends(date_range_params)):
 def whatif(deal_id: str, incremental_fraction: float, attach_effect: float,
            params: dict = Depends(date_range_params)):
     """Live what-if: recompute true profit with hypothetical assumptions
-    WITHOUT persisting them (CLAUDE.md §7.2 'what-if control')."""
+    WITHOUT persisting them."""
     if deal_id not in store.deals():
         raise HTTPException(404, "deal not found")
     return profit.deal_true_profit_stats(deal_id, get_filtered_orders(params),

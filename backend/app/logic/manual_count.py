@@ -4,7 +4,7 @@ manual_count.py — the digital version of the clipboard inventory check.
 The worker still walks the store and counts everything by hand (pizza boxes by
 size, dough, napkins, gloves, ...) — this module just gives that count a home
 in the app instead of a piece of paper, and turns it straight into "what to
-order next" (CLAUDE.md §7.3).
+order next".
 
 For recipe-tracked items (food/packaging) we also show the order-derived
 "system expected" number next to the hand count, so a big gap is a signal

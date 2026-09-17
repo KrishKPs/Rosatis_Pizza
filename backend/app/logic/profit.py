@@ -1,5 +1,5 @@
 """
-profit.py — the profit math, in ONE place (CLAUDE.md §8: "Never recompute
+profit.py — the profit math, in ONE place ("Never recompute
 these differently in the UI. One source of truth.").
 
 Every module (Sales, Deal Optimizer, Inventory, Menu, Orders, Customers) calls
@@ -15,8 +15,8 @@ from datetime import date
 
 from app.data import store
 
-# Categories that count as "add-ons" pulled into an order (CLAUDE.md glossary:
-# attach = "extra items pulled into an order (drinks/wings/sides)"). Pizza,
+# Categories that count as "add-ons" pulled into an order (attach =
+# "extra items pulled into an order (drinks/wings/sides)"). Pizza,
 # Pasta, Sandwiches, and Calzone are the "meal" the customer came for.
 ATTACH_CATEGORIES = {"Wings", "Appetizers", "Salad", "Beverages", "Desserts"}
 
@@ -179,7 +179,7 @@ def top_items(orders_subset, n: int = 10) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Deal Profit Optimizer — the differentiator (CLAUDE.md §7.2)
+# Deal Profit Optimizer — the differentiator
 # ---------------------------------------------------------------------------
 def deal_true_profit_stats(deal_id: str, orders_subset, incremental_fraction: float | None = None,
                             attach_effect: float | None = None) -> dict:

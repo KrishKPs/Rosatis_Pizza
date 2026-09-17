@@ -87,7 +87,7 @@ def build_ingredients() -> dict[str, Ingredient]:
 def build_supplies() -> dict[str, Ingredient]:
     """Front-of-house/packaging supplies that never appear in a recipe, so order
     history can't tell us how many are left — the whole reason the manual count
-    sheet (CLAUDE.md §7.3, "manual inventory check") exists. reorder_point /
+    sheet exists. reorder_point /
     restock_to still apply; they're just compared against a hand count instead
     of a computed depletion."""
     rows = [
@@ -317,7 +317,7 @@ DAYS = 28
 #    the revenue actually charged). Food cost / commission / net profit are
 #    NOT stored — they are derived live from current costs by logic/profit.py,
 #    so an edited cost re-flows every order retroactively. Single source of
-#    truth per CLAUDE.md §8.
+#    truth.
 # ---------------------------------------------------------------------------
 @dataclass
 class OrderLine:

@@ -1,4 +1,4 @@
-"""Customers & Loyalty — CLAUDE.md §7.6."""
+"""Customers & Loyalty."""
 
 from __future__ import annotations
 from fastapi import APIRouter, Depends

@@ -1,5 +1,4 @@
-"""Pydantic request bodies for the editable-cost endpoints (CLAUDE.md §12:
-costs are visible and editable everywhere, never hidden magic)."""
+"""Pydantic request bodies for the editable-cost endpoints (costs are visible and editable everywhere, never hidden magic)."""
 
 from __future__ import annotations
 from pydantic import BaseModel, Field

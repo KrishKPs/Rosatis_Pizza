@@ -1,4 +1,4 @@
-"""Sales & Analytics — CLAUDE.md §7.1, the home screen."""
+"""Sales & Analytics: the home screen."""
 
 from __future__ import annotations
 from fastapi import APIRouter, Depends

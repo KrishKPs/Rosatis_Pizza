@@ -1,5 +1,5 @@
-"""Menu & Pricing — CLAUDE.md §7.4. Editing a food cost re-flows margins and
-every downstream profit number (single source of truth, §12)."""
+"""Menu & Pricing. Editing a food cost re-flows margins and
+every downstream profit number (single source of truth)."""
 
 from __future__ import annotations
 from fastapi import APIRouter, HTTPException

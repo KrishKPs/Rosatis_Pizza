@@ -2,7 +2,7 @@
 
 Simple JSON endpoints over the single seeded data layer (app/data). No logic
 duplicated across languages: the profit math lives in app/logic once and
-every route calls it (CLAUDE.md §4/§8).
+every route calls it.
 """
 
 from __future__ import annotations
